@@ -1,0 +1,92 @@
+<nav id="navbar">
+    <header class="titles">Responsive Web </header>
+    <ul>
+      <li><a class="nav-link" href="#introduction">Introduction</a>
+      </li>
+      <li><a class="nav-link" href="#create_a_media_query">Create a Media Query</a></li>
+      <li>
+        <a class="nav-link" href="#make_an_image_responsive">Make an Image Responsive</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#use_a_retina_image_for_higher_resolution_displays">Use a Retina Image for Higher Resolution Displays</a>
+      </li>
+      <li><a class="nav-link" href="#make_typography_responsive">Make Typography Responsive</a></li>
+      </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header class="titles">Introduction</header>
+      <article>
+        <p>If you are new to programming, we recommend you start at the beginning and earn these certifications in order.
+  
+  To earn each certification, build its 5 required projects and get all their tests to pass. <p/>
+  
+  <p>
+  You can add these certifications to your résumé or LinkedIn. But more important than the 
+          
+  certifications is the practice you get along the way.
+  
+  If you feel overwhelmed, that is normal. Programming is hard.
+  
+  Practice is the key. Practice, practice, practice.</p>
+      </article>
+    </section>  
+    <section class="main-section" id="create_a_media_query">
+      <header class="titles">Create a Media Query</header>
+      <article>
+        <p>Media Queries are a new technique introduced in CSS3 that change the presentation of content based on different viewport sizes. The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.</p>
+  
+  <p>Media Queries consist of a media type, and if that media type matches the type of device the document is displayed on, the styles are applied. You can have as many selectors and styles inside your media query as you want.</p>
+  
+  <p>Here's an example of a media query that returns the content when the device's width is less than or equal to 100px:</p>
+   <code>
+  @media (max-width: 100px) { /* CSS Rules */ }</code>
+        <p>and the following media query returns the content when the device's height is more than or equal to 350px:</p>
+        <code>@media (min-height: 350px) { /* CSS Rules */ }
+  </code>
+        <p>Remember, the CSS inside the media query is applied only if the media type matches that of the device being used.</p>
+      </article>
+    </section>
+    <section class="main-section" id="make_an_image_responsive">
+      <header class="titles">Make an Image Responsive</header>
+      <article>
+        <p>Making images responsive with CSS is actually very simple. You just need to add these properties to an image:</p>
+        <code>img {
+    max-width: 100%;
+    height: auto;
+  }</code>
+        <p>The max-width of 100% will make sure the image is never wider than the container it is in, and the height of auto will make the image keep its original aspect ratio.</p>
+      </article>
+    </section>
+      <section class="main-section" id="use_a_retina_image_for_higher_resolution_displays">
+      <header class="titles">Use a Retina Image for Higher Resolution Displays</header>
+      <article>
+        <p>With the increase of internet connected devices, their sizes and specifications vary, and the displays they use could be different externally and internally. Pixel density is an aspect that could be different on one device from others and this density is known as Pixel Per Inch(PPI) or Dots Per Inch(DPI).</p> 
+          <p>The most famous such display is the one known as a "Retina Display" on the latest Apple MacBook Pro notebooks, and recently iMac computers. Due to the difference in pixel density between a "Retina" and "Non-Retina" displays, some images that have not been made with a High-Resolution Display in mind could look "pixelated" when rendered on a High-Resolution display.</p>
+        <p>The simplest way to make your images properly appear on High-Resolution Displays, such as the MacBook Pros "retina display" is to define their width and height values as only half of what the original file is. Here is an example of an image that is only using half of the original height and width:</p>
+  <blockquote> 
+     <code>
+      <xmp>
+      <style>
+    img { height: 250px; width: 250px; }
+      </style>
+      <img src="coolPic500x500" alt="A most excellent picture"></xmp>
+      </code>
+        </blockquote>
+      </article>
+    </section>
+      <section class="main-section" id="make_typography_responsive">
+      <header class="titles">Make Typography Responsive</header>
+      <article>
+        <p>Instead of using <code>em</code> or <code>px</code> to size text, you can use viewport units for responsive typography. Viewport units, like percentages, are relative units, but they are based off different items. Viewport units are relative to the viewport dimensions (width or height) of a device, and percentages are relative to the size of the parent container element.</p>
+        <p>The four different viewport units are:</p>
+        <ul>
+          <li>List of the 4 Viewports</li>
+          <li>vw (viewport width): 10vw would be 10% of the viewport's width.</li>
+          <li>vh (viewport height): 3vh would be 3% of the viewport's height.</li>
+          <li>vmin (viewport minimum): 70vmin would be 70% of the viewport's smaller dimension (height or width).</li>
+          <li>vmax (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or width).</li>
+        </ul>
+      </article>
+    </section>
+  </main>
